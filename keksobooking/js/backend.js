@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var SERVER_URL = 'https://1510.dump.academy/keksobooking';
+  var SERVER_URL = 'https://js.dump.academy/keksobooking';
   var ERROR_TEXTS = {
     400: 'Неверный запрос',
     401: 'Пользователь не авторизован',
