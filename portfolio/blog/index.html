@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Blog</title>
+</head>
+<body>
+
+  <header class="page-header">
+
+    <div class="top-menu-wrapper">
+      <div class="top-menu container">
+        <form class="top-menu__search" action="#">
+          <input class="top-menu__search-field" type="search" name="searchfield" placeholder="Поиск по блогу">
+          <button type="submit">
+            <span class="visually-hidden">Найти</span>
+          </button>
+        </form>
+
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="img/icons/icon-vk.svg" alt="Вконтакте" width="20" height="20">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="img/icons/icon-fb.svg" alt="Фейсбук" width="20" height="20">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="img/icons/icon-instagram.svg" alt="Инстаграмм" width="20" height="20">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-header__logo-wrapper menu--nojs">
+        <button class="page-header__menu-toggle">
+          <span class="page-header__toggle"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <a class="page-header__logo">
+          <img src="img/logoPAN.svg" alt="Logo" width="228" height="60">
+        </a>
+
+        <a class="page-header__search-link" href="#">
+          <img src="img/icons/icon-search.svg" alt="Поиск" width="20" height="20">
+          <span class="visually-hidden">Найти</span>
+        </a>
+
+        <form class="page-header__search-mob" action="#" method="get">
+          <input class="page-header__search-field" type="search" name="searchField" autofocus>
+          <button type="submit">Найти</button>
+        </form>
+
+      </div>
+
+      <div class="menu__wrapper">
+        <nav class="menu">
+
+          <a class="menu__link-shop" href="#">
+            Перейти в <span>Магазин</span>
+          </a>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Тренды</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Подиум</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Звездный стиль</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Практика</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Street style</a>
+            </li>
+          </ul>
+
+          <a class="menu__subscribe" href="#">Подписаться</a>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="page-main page-main--index container">
+
+    <div class="page-main__wrapper">
+      <div class="main-page__banner">
+        <img src="img/fh6.jpg" alt="Баннер" height="240">
+      </div>
+
+      <section class="articles">
+        <h2 class="articles__title">Сегодня читают</h2>
+        <div class="articles__block-wrapper">
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/fh3.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__desc">Подиум</span>
+            <span class="articles__date">23 сентября</span>
+            <a href="article.html">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <h2 class="articles__title">Тренды</h2>
+        <div class="articles__block-wrapper">
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/fh5.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__date">23 сентября</span>
+            <a href="#">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/fh6.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__date">23 сентября</span>
+            <a href="#">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/fh7.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__date">23 сентября</span>
+            <a href="#">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/Layer67.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__date">23 сентября</span>
+            <a href="#">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/Layer67.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__date">23 сентября</span>
+            <a href="#">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/Layer67.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__date">23 сентября</span>
+            <a href="#">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <h2 class="articles__title">Подиум</h2>
+        <div class="articles__block-wrapper">
+          <div class="articles__block">
+            <div class="articles__picture">
+              <img src="img/Layer67.jpg" alt="Фото к статье">
+            </div>
+            <span class="articles__date">23 сентября</span>
+            <a href="#">
+              <h3 class="articles__subtitle">Маленькое черное и не платье</h3>
+            </a>
+            <p>Объединенное мужское и женское шоу состоялось на импровизированной съемочной площадке</p>
+            <div class="articles__info">
+              <span class="articles__info-view">2 148</span>
+              <span class="articles__info-comment">2</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="content-nav__wrapper">
+      <section class="content-nav">
+        <h2 class="content-nav__title">Архив новостей</h2>
+        <div class="calendar">
+          <div class="calendar__date-nav">
+            <a class="calendar__nav calendar__nav--prev" href="#">
+              <span class="visually-hidden">Предыдущий месяц</span>
+            </a>
+            <p class="calendar__date">
+              <span class="calendar__date-month">Февраль</span>
+              <span class="calendar__date-years">2018</span>
+            </p>
+            <a class="calendar__nav calendar__nav--next" href="#">
+              <span class="visually-hidden">Следующий месяц</span>
+            </a>
+          </div>
+          <table>
+            <tr>
+              <th>пн</th>
+              <th>вт</th>
+              <th>ср</th>
+              <th>чт</th>
+              <th>пт</th>
+              <th>сб</th>
+              <th>вс</th>
+            </tr>
+            <tr>
+              <td><a href="#">29</a></td>
+              <td><a href="#">30</a></td>
+              <td><a href="#">31</a></td>
+              <td><a href="#">1</a></td>
+              <td><a href="#">2</a></td>
+              <td><a href="#">3</a></td>
+              <td><a href="#">4</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">5</a></td>
+              <td><a href="#">6</a></td>
+              <td><a href="#">7</a></td>
+              <td><a href="#">8</a></td>
+              <td><a href="#">9</a></td>
+              <td><a href="#">10</a></td>
+              <td><a href="#">11</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">12</a></td>
+              <td><a href="#">13</a></td>
+              <td><a class="calendar__current-date" href="#">14</a></td>
+              <td><a href="#">15</a></td>
+              <td><a href="#">16</a></td>
+              <td><a href="#">17</a></td>
+              <td><a href="#">18</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">19</a></td>
+              <td><a href="#">20</a></td>
+              <td><a href="#">21</a></td>
+              <td><a href="#">22</a></td>
+              <td><a href="#">23</a></td>
+              <td><a href="#">24</a></td>
+              <td><a href="#">25</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">26</a></td>
+              <td><a href="#">27</a></td>
+              <td><a href="#">28</a></td>
+              <td><a href="#">1</a></td>
+              <td><a href="#">2</a></td>
+              <td><a href="#">3</a></td>
+              <td><a href="#">4</a></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-nav">
+        <h2 class="content-nav__title">Популярное</h2>
+        <div class="popular">
+          <div class="popular__item">
+            <img src="img/fh5.jpg" alt="Популярное" width="106" height="97">
+            <p>
+              <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+            </p>
+          </div>
+          <div class="popular__item">
+            <img src="img/Layer83.jpg" alt="Популярное" width="106" height="97">
+            <p>
+              <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+            </p>
+          </div>
+          <div class="popular__item">
+            <img src="img/fh4.jpeg" alt="Популярное" width="106" height="97">
+            <p>
+              <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+            </p>
+          </div>
+          <div class="popular__item">
+            <img src="img/Layer83.jpg" alt="Популярное" width="106" height="97">
+            <p>
+              <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-nav">
+        <h2 class="content-nav__title">Новости</h2>
+        <div class="content-nav__news">
+          <div class="content-nav__news-item">
+            <span class="articles__date">23 сентября</span>
+            <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+          </div>
+          <div class="content-nav__news-item">
+            <span class="articles__date">23 сентября</span>
+            <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+          </div>
+          <div class="content-nav__news-item">
+            <span class="articles__date">23 сентября</span>
+            <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+          </div>
+          <div class="content-nav__news-item">
+            <span class="articles__date">23 сентября</span>
+            <a class="content-nav__link" href="#">5 «диких» идей из новой коллекции Calvin Klein 205W39NYC</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-nav content-nav--instagram">
+        <h2 class="content-nav__title">Instagram</h2>
+        <div class="instagram-block">
+          <table>
+            <tr>
+              <td>
+                <a href="#">
+                  <img src="img/instagram.jpg" alt="Фото из instagram" width="150" height="150">
+                </a>
+              </td>
+              <td>
+                <a href="#">
+                  <img src="img/instagram.jpg" alt="Фото из instagram" width="150" height="150">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">
+                  <img src="img/instagram.jpg" alt="Фото из instagram" width="150" height="150">
+                </a>
+              </td>
+              <td>
+                <a href="#">
+                  <img src="img/instagram.jpg" alt="Фото из instagram" width="150" height="150">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p class="page-footer__copyright">&copy;2018 «Пан Чемодан» — пишем о сумках, чемоданах и аксессуарах</p>
+
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/icons/icon-vk.svg" alt="Вконтакте" width="20" height="20">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/icons/icon-fb.svg" alt="Фейсбук" width="20" height="20">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/icons/icon-instagram.svg" alt="Инстаграмм" width="20" height="20">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>

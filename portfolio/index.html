@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="Description" content="Портфолио frontend разработчика Корякина Алексея">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#344955">
   <link rel="shortcut icon" href="favicon/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <title>Portfolio</title>
@@ -25,27 +27,22 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#about">
                 Обо мне
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
-                Навыки
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#works">
                 Работы
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#education">
                 Образование
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#contacts">
                 Контакты
               </a>
             </li>
@@ -54,42 +51,47 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--email" href="mailto:alexeycorr@gmail.com" aria-label="email" target="_blank">
+              <a class="social__link social__link--email" href="mailto:alexeycorr@gmail.com" aria-label="email"
+                target="_blank" rel="noopener">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/icons/sprite.svg#email"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--github" href="https://github.com/AlexeyCorr" aria-label="github" target="_blank">
+              <a class="social__link social__link--github" href="https://github.com/AlexeyCorr" aria-label="github"
+                target="_blank" rel="noopener">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/icons/sprite.svg#github"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="tg://resolve?domain=alexeycorr" aria-label="telegram" target="_blank">
+              <a class="social__link social__link--telegram" href="tg://resolve?domain=alexeycorr" aria-label="telegram"
+                target="_blank" rel="noopener">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/icons/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
             <!-- <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/alexeycorr" aria-label="vkontakte" target="_blank">
+              <a class="social__link social__link--vk" href="https://vk.com/alexeycorr" aria-label="vkontakte" target="_blank" rel="noopener">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/icons/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li> -->
             <li class="social__item">
-              <a class="social__link social__link--codepen" href="https://codepen.io/AlexeyCorr/" aria-label="codepen" target="_blank">
+              <a class="social__link social__link--codepen" href="https://codepen.io/AlexeyCorr/" aria-label="codepen"
+                target="_blank" rel="noopener">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/icons/sprite.svg#codepen"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/alexeycodes/" aria-label="instagram" target="_blank">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/alexeycodes/"
+                aria-label="instagram" target="_blank" rel="noopener">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/icons/sprite.svg#instagram"></use>
                 </svg>
@@ -100,7 +102,7 @@
       </div>
 
       <!-- Кнопка открытия мобильного меню -->
-      <button class="menu-toggle" type="button">
+      <button class="menu-toggle" type="button" aria-label="Открыть меню">
         <span></span>
       </button>
     </div>
@@ -113,238 +115,297 @@
     </div>
   </header>
 
-  <main class="main-page container">
-    <section class="section">
+  <main class="main-page">
+    <section class="section" id="about">
       <h2 class="section__title">Обо мне</h2>
-      <div class="about">
-        <div class="about__pic">
-          <img src="img/my-photo-2.jpg" srcset="img/my-photo-2@2x.jpg 2x" alt="Моя фотография" width="385" height="460">
-        </div>
-        <div class="about__content">
-          <p class="about__text"><b>Привет!</b>
-            Я веб-разработчик из Москвы.
-            Владею <b>HTML5</b>, <b>CSS3</b> и <b>JavaScript</b>. Во время разработки уделяю внимание максимальному <b>соответствию
-              макету</b>,
-            <b>семантике</b> и <b>доступности</b>. Умею верстать <b>резиново</b> и <b>адаптивно</b> (mobile-first). В
-            качестве препроцессора
-            использую SASS в синтаксисе <b>SCSS</b>. Классы называю по методологии <b>БЭМ</b>.</p>
+      <div class="container">
+        <div class="about">
+          <div class="about__pic">
+            <img src="img/my-photo-2.jpg" srcset="img/my-photo-2@2x.jpg 2x" alt="Моя фотография" width="385"
+              height="460">
+          </div>
+          <div class="about__content">
+            <p class="about__text"><b>Привет!</b>
+              Я веб-разработчик из Москвы.
+              Владею <b>HTML5</b>, <b>CSS3</b> и <b>JavaScript</b>. Во время разработки уделяю внимание максимальному
+              <b>соответствию
+                макету</b>,
+              <b>семантике</b> и <b>доступности</b>. Умею верстать <b>резиново</b> и <b>адаптивно</b> (mobile-first). В
+              качестве препроцессора
+              использую SASS в синтаксисе <b>SCSS</b>. Классы называю по методологии <b>БЭМ</b>.
+            </p>
 
-          <p class="about__text">Знаком с таким фреймворков, как <b>Vue.js</b> и <b>React.js</b>.</p>
+            <p class="about__text">Являюсь <b>наставником</b> в HTMLAcademy, объясняю особенности HTML и CSS, а так же
+              делаю код ревью студентов.</p>
 
-          <p class="about__text">Стремлюсь следить за новыми технологиями и развиваться как разработчик.</p>
-          <div class="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--email" href="mailto:alexeycorr@gmail.com" aria-label="email" target="_blank">
-                  <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/icons/sprite.svg#email"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--github" href="https://github.com/AlexeyCorr" aria-label="github" target="_blank">
-                  <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/icons/sprite.svg#github"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--telegram" href="tg://resolve?domain=alexeycorr" aria-label="telegram" target="_blank">
-                  <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/icons/sprite.svg#telegram"></use>
-                  </svg>
-                </a>
-              </li>
-              <!-- <li class="social__item">
-                <a class="social__link social__link--vk" href="https://vk.com/alexeycorr" aria-label="vkontakte" target="_blank">
-                  <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/icons/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </li> -->
-              <li class="social__item">
-                <a class="social__link social__link--codepen" href="https://codepen.io/AlexeyCorr/" aria-label="codepen" target="_blank">
-                  <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/icons/sprite.svg#codepen"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/alexeycodes/" aria-label="instagram" target="_blank">
-                  <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/icons/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <p class="about__text">Знаком с таким фреймворков, как <b>Vue.js</b> и <b>React.js</b>.</p>
+
+            <p class="about__text">Стремлюсь следить за новыми технологиями и развиваться как разработчик.</p>
+
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--email" href="mailto:alexeycorr@gmail.com" aria-label="email"
+                    target="_blank" rel="noopener">
+                    <svg class="social__icon" width="20" height="20">
+                      <use xlink:href="img/icons/sprite.svg#email"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--github" href="https://github.com/AlexeyCorr" aria-label="github"
+                    target="_blank" rel="noopener">
+                    <svg class="social__icon" width="20" height="20">
+                      <use xlink:href="img/icons/sprite.svg#github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--telegram" href="tg://resolve?domain=alexeycorr"
+                    aria-label="telegram" target="_blank" rel="noopener">
+                    <svg class="social__icon" width="20" height="20">
+                      <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- <li class="social__item">
+                      <a class="social__link social__link--vk" href="https://vk.com/alexeycorr" aria-label="vkontakte" target="_blank" rel="noopener">
+                        <svg class="social__icon" width="20" height="20">
+                          <use xlink:href="img/icons/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </li> -->
+                <li class="social__item">
+                  <a class="social__link social__link--codepen" href="https://codepen.io/AlexeyCorr/"
+                    aria-label="codepen" target="_blank" rel="noopener">
+                    <svg class="social__icon" width="20" height="20">
+                      <use xlink:href="img/icons/sprite.svg#codepen"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="https://www.instagram.com/alexeycodes/"
+                    aria-label="instagram" target="_blank" rel="noopener">
+                    <svg class="social__icon" width="20" height="20">
+                      <use xlink:href="img/icons/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="section__title">Мои навыки</h2>
-      <div class="skills">
-        <ul class="skills__list">
-          <li class="skills__item">
-            <h3 class="skills__title">Front-end</h3>
-            <ul>
-              <li>HTML5</li>
-            </ul>
-          </li>
-          <li class="skills__item">
-            <h3 class="skills__title">Mentor</h3>
-            <ul>
-              <li>mentor</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="section" id="works">
       <h2 class="section__title">Проекты</h2>
-      <div class="projects">
-        <ul class="projects__list">
-          <li class="projects__item">
-            <div class="projects__view projects__view--desktop">
-              <div class="projects__pic projects__pic--desktop">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/work/sedona-300.jpg 1x, img/work/sedona-300@2x.jpg 2x">
-                  <img src="img/work/sedona-.jpg" srcset="img/work/sedona@2x.jpg 2x" alt="Проект Sedona" width="400"
-                    height="900">
-                </picture>
+      <div class="container">
+        <div class="projects">
+          <ul class="projects__list">
+            <li class="projects__item">
+              <div class="projects__view projects__view--desktop">
+                <div class="projects__pic projects__pic--desktop">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="img/work/sedona-300.jpg 1x, img/work/sedona-300@2x.jpg 2x">
+                    <img src="img/work/sedona.jpg" srcset="img/work/sedona@2x.jpg 2x" alt="Проект Sedona" width="400"
+                      height="900">
+                  </picture>
+                </div>
               </div>
-            </div>
-            <h3 class="projects__title">Учебный проект интенсива базовый HTML&CSS - Sedona.</h3>
-            <div class="projects__stack">
-              <p>Используемый стэк:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
+              <h3 class="projects__title">Учебный проект интенсива Профессиональный HTML и CSS уровень 1 - Sedona.
+              </h3>
+              <div class="projects__stack">
+                <p>Используемый стэк:</p>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
 
+              <div class="button__wrapper">
+                <a class="button" href="/sedona">Просмотр</a>
+                <a class="button" href="https://github.com/AlexeyCorr/368101-sedona">Исходники</a>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__view projects__view--desktop">
+                <div class="projects__pic projects__pic--desktop">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="img/work/mishka-300.jpg 1x, img/work/mishka-300@2x.jpg 2x">
+                    <img src="img/work/mishka-desktop.jpg" srcset="img/work/mishka-desktop@2x.jpg 2x"
+                      alt="Проект Mishka" width="400" height="900">
+                  </picture>
+                </div>
+              </div>
+              <div class="projects__view projects__view--mobile">
+                <div class="projects__pic projects__pic--mobile">
+                  <img src="img/work/mishka-mobile.jpg" srcset="img/work/mishka-mobile@2x.jpg"
+                    alt="Проект Mishka мобильныя версия" width="200" height="800">
+                </div>
+              </div>
+              <h3 class="projects__title">Учебный проект интенсива Профессиональный HTML и CSS уровень 2 - Mishka.</h3>
+              <div class="projects__stack">
+                <p>Используемый стэк:</p>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>SASS</li>
+                  <li>Gulp</li>
+                </ul>
+              </div>
+
+              <div class="button__wrapper">
+                <a class="button" href="/mishka">Просмотр</a>
+                <a class="button" href="https://github.com/AlexeyCorr/mishka">Исходники</a>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__view projects__view--desktop">
+                <div class="projects__pic projects__pic--desktop">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="img/work/keksobooking-300.jpg 1x, img/work/keksobooking-300@2x.jpg 2x">
+                    <img src="img/work/keksobooking.jpg" srcset="img/work/keksobooking@2x.jpg 2x"
+                      alt="Проект Keksobooking" width="400" height="900">
+                  </picture>
+                </div>
+              </div>
+              <h3 class="projects__title">Учебный проект интенсива Профессиональный JavaScript уровень 1 - Keksobooking.</h3>
+              <div class="projects__stack">
+                <p>Используемый стэк:</p>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>Gulp</li>
+                  <li>ES5</li>
+                </ul>
+              </div>
+              <div class="button__wrapper">
+                <a class="button" href="/keksobooking">Просмотр</a>
+                <a class="button" href="https://github.com/AlexeyCorr/368101-keksobooking">Исходники</a>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__view projects__view--desktop">
+                <div class="projects__pic projects__pic--desktop">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/work/blog-300.jpg 1x, img/work/blog-300@2x.jpg 2x">
+                    <img src="img/work/blog-desktop.jpg" srcset="img/work/blog-desktop@2x.jpg 2x"
+                      alt="Блог интернет магазина" width="400" height="900">
+                  </picture>
+                </div>
+              </div>
+              <div class="projects__view projects__view--mobile">
+                <div class="projects__pic projects__pic--mobile">
+                  <img src="img/work/blog-mobile.jpg" srcset="img/work/blog-mobile@2x.jpg"
+                    alt="Проект Mishka мобильныя версия" width="200" height="800">
+                </div>
+              </div>
+              <h3 class="projects__title">Адаптивка верста главное и внутренней страницы блога</h3>
+              <div class="projects__stack">
+                <p>Используемый стэк:</p>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>SASS</li>
+                  <li>Webpack</li>
+                </ul>
+              </div>
+
+              <div class="button__wrapper">
+                <a class="button" href="/blog">Просмотр</a>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__view projects__view--desktop">
+                <div class="projects__pic projects__pic--desktop">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="img/work/pixel-hunter-300.jpg 1x, img/work/pixel-hunter-300@2x.jpg 2x">
+                    <img src="img/work/pixel-hunter.jpg" srcset="img/work/pixel-hunter@2x.jpg 2x" alt="Проект Mishka"
+                      width="400" height="900">
+                  </picture>
+                </div>
+              </div>
+              <h3 class="projects__title">Учебный проект интенсива Профессиональный JavaScript уровень 2 - Pixel Hunter.</h3>
+              <div class="projects__stack">
+                <p>Используемый стэк:</p>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>Gulp</li>
+                  <li>Babel</li>
+                  <li>ES6</li>
+                </ul>
+              </div>
+
+              <div class="button__wrapper">
+                <a class="button" href="/pixel-hunter">Просмотр</a>
+                <a class="button" href="https://github.com/AlexeyCorr/368101-pixel-hunter">Исходники</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section__title">Образование</h2>
+      <div class="education container">
+        <ul class="education__list">
+          <li class="education__item education__item--html">
+            <h3 class="education__title">
+              <a class="education__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noopener">
+                Профессиональный HTML и CSS,<br> уровень 1
+              </a>
+            </h3>
             <div class="button__wrapper">
-              <a class="button" href="/sedona">Просмотр</a>
-              <a class="button" href="https://github.com/AlexeyCorr/368101-sedona">Исходники</a>
+              <a class="button" href="#" data-src="html-css">Сертификат</a>
             </div>
           </li>
-          <li class="projects__item">
-            <div class="projects__view projects__view--desktop">
-              <div class="projects__pic projects__pic--desktop">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/work/mishka-300.jpg 1x, img/work/mishka-300@2x.jpg 2x">
-                  <img src="img/work/mishka-desktop.jpg" srcset="img/work/mishka-desktop@2x.jpg 2x" alt="Проект Mishka"
-                    width="400" height="900">
-                </picture>
-              </div>
-            </div>
-            <div class="projects__view projects__view--mobile">
-              <div class="projects__pic projects__pic--mobile">
-                <img src="img/work/mishka-mobile.jpg" srcset="img/work/mishka-mobile@2x.jpg" alt="Проект Mishka мобильныя версия"
-                  width="200" height="800">
-              </div>
-            </div>
-            <h3 class="projects__title">Учебный проект интенсива продвинутый HTML&CSS - Mishka.</h3>
-            <div class="projects__stack">
-              <p>Используемый стэк:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>SASS</li>
-                <li>Gulp</li>
-              </ul>
-            </div>
-
+          <li class="education__item education__item--js">
+            <h3 class="education__title">
+              <a class="education__link" href="https://htmlacademy.ru/intensive/javascript" target="_blank" rel="noopener">
+                Профессиональный JavaScript,<br> уровень 1
+              </a>
+            </h3>
             <div class="button__wrapper">
-              <a class="button" href="/mishka">Просмотр</a>
-              <a class="button" href="https://github.com/AlexeyCorr/mishka">Исходники</a>
+              <a class="button" href="#" data-src="js">Сертификат</a>
             </div>
           </li>
-          <li class="projects__item">
-            <div class="projects__view projects__view--desktop">
-              <div class="projects__pic projects__pic--desktop">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/work/keksobooking-300.jpg 1x, img/work/keksobooking-300@2x.jpg 2x">
-                  <img src="img/work/keksobooking.jpg" srcset="img/work/keksobooking@2x.jpg 2x" alt="Проект Mishka"
-                    width="400" height="900">
-                </picture>
-              </div>
-            </div>
-            <h3 class="projects__title">Учебный проект интенсива JavaScript, уровень 1 - Keksobooking.</h3>
-            <div class="projects__stack">
-              <p>Используемый стэк:</p>
-              <ul>
-                <li>JavaScript</li>
-                <li>Gulp</li>
-                <li>ES5</li>
-              </ul>
-            </div>
+          <li class="education__item education__item--js">
+            <h3 class="education__title">
+              <a class="education__link" href="https://htmlacademy.ru/intensive/ecmascript" target="_blank" rel="noopener">
+                Профессиональный JavaScript,<br> уровень 2
+              </a>
+            </h3>
             <div class="button__wrapper">
-              <a class="button" href="/keksobooking">Просмотр</a>
-              <a class="button" href="https://github.com/AlexeyCorr/368101-keksobooking">Исходники</a>
-            </div>
-          </li>
-          <li class="projects__item">
-            <div class="projects__view projects__view--desktop">
-              <div class="projects__pic projects__pic--desktop">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/work/pixel-hunter-300.jpg 1x, img/work/pixel-hunter-300@2x.jpg 2x">
-                  <img src="img/work/pixel-hunter.jpg" srcset="img/work/pixel-hunter@2x.jpg 2x" alt="Проект Mishka"
-                    width="400" height="900">
-                </picture>
-              </div>
-            </div>
-            <h3 class="projects__title">Учебный проект интенсива JavaScript, уровень 2 - Pixel Hunter.</h3>
-            <div class="projects__stack">
-              <p>Используемый стэк:</p>
-              <ul>
-                <li>JavaScript</li>
-                <li>Gulp</li>
-                <li>Babel</li>
-                <li>ES6</li>
-              </ul>
-            </div>
-
-            <div class="button__wrapper">
-              <a class="button" href="/pixel-hunter">Просмотр</a>
-              <a class="button" href="https://github.com/AlexeyCorr/368101-pixel-hunter">Исходники</a>
+              <a class="button" href="#" data-src="ecma">Сертификат</a>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section">
-      <h2 class="section__title">Контакты</h2>
-      <div class="contacts">
-        <!-- Email -->
-        <p class="contacts__email">E-mail:
-          <a href="mailto:alexeycorr@gmail.com">alexeycorr@gmail.com</a>
-        </p>
 
-        <!-- Contact form -->
-        <form class="contasts__form" action="https://formspree.io/alexeycorr@gmail.com" method="post">
-          <p>
-            <label class="contacts__label" for="name">Имя:<sup>*</sup></label>
-            <input class="contacts__field" type="text" name="name" id="name" required>
+    <section class="section" id="contacts">
+      <h2 class="section__title">Контакты</h2>
+      <div class="container">
+        <div class="contacts">
+          <!-- Email -->
+          <p class="contacts__text">
+            Связаться со мной
           </p>
-          <p>
-            <label class="contacts__label" for="email">E-mail:<sup>*</sup></label>
-            <input class="contacts__field" type="email" name="email" id="email" required>
+          <p class="contacts__email">E-mail:
+            <a href="mailto:alexeycorr@gmail.com">alexeycorr@gmail.com</a>
           </p>
-          <p>
-            <label class="contacts__label" for="comment">Комментарий:<sup>*</sup></label>
-            <textarea class="contacts__field contacts__field--area" name="comment" id="comment" required></textarea>
-          </p>
-          <div class="button__wrapper">
-            <button class="button" type="submit">Отправить</button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -353,42 +414,47 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--email" href="mailto:alexeycorr@gmail.com" aria-label="email" target="_blank">
+            <a class="social__link social__link--email" href="mailto:alexeycorr@gmail.com" aria-label="email"
+              target="_blank" rel="noopener">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/sprite.svg#email"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--github" href="https://github.com/AlexeyCorr" aria-label="github" target="_blank">
+            <a class="social__link social__link--github" href="https://github.com/AlexeyCorr" aria-label="github"
+              target="_blank" rel="noopener">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/sprite.svg#github"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="tg://resolve?domain=alexeycorr" aria-label="telegram" target="_blank">
+            <a class="social__link social__link--telegram" href="tg://resolve?domain=alexeycorr" aria-label="telegram"
+              target="_blank" rel="noopener">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
           <!-- <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/alexeycorr" aria-label="vkontakte" target="_blank">
+            <a class="social__link social__link--vk" href="https://vk.com/alexeycorr" aria-label="vkontakte" target="_blank" rel="noopener">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/sprite.svg#vk"></use>
               </svg>
             </a>
           </li> -->
           <li class="social__item">
-            <a class="social__link social__link--codepen" href="https://codepen.io/AlexeyCorr/" aria-label="codepen" target="_blank">
+            <a class="social__link social__link--codepen" href="https://codepen.io/AlexeyCorr/" aria-label="codepen"
+              target="_blank" rel="noopener">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/sprite.svg#codepen"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/alexeycodes/" aria-label="instagram" target="_blank">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/alexeycodes/"
+              aria-label="instagram" target="_blank" rel="noopener">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/sprite.svg#instagram"></use>
               </svg>
