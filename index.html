@@ -390,13 +390,36 @@
       <div class="container">
         <div class="contacts">
           <!-- Email -->
-          <p class="contacts__text">
+          <!-- <p class="contacts__text">
             Связаться со мной
-          </p>
+          </p> -->
           <p class="contacts__email">E-mail:
             <a href="mailto:alexeycorr@gmail.com">alexeycorr@gmail.com</a>
           </p>
         </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="text-filter">
+          <defs>
+            <filter id="filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+              primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+              <feMorphology operator="dilate" radius="4 4" in="SourceAlpha" result="morphology"></feMorphology>
+              <feFlood flood-color="#30597E" flood-opacity="1" result="flood"></feFlood>
+              <feComposite in="flood" in2="morphology" operator="in" result="composite"></feComposite>
+              <feComposite in="composite" in2="SourceAlpha" operator="out" result="composite1"></feComposite>
+              <feTurbulence type="fractalNoise" baseFrequency="0.01 0.02" numOctaves="1" seed="0" stitchTiles="stitch"
+                result="turbulence"></feTurbulence>
+              <feDisplacementMap in="composite1" in2="turbulence" scale="17" xChannelSelector="A" yChannelSelector="A"
+                result="displacementMap"></feDisplacementMap>
+              <feMerge result="merge">
+                <feMergeNode in="SourceGraphic" result="mergeNode"></feMergeNode>
+                <feMergeNode in="displacementMap" result="mergeNode1"></feMergeNode>
+              </feMerge>
+            </filter>
+          </defs>
+          <svg>
+            <g filter="url(#filter)"><text x="50%" y="50%" text-anchor="middle">Developing...</text></g>
+          </svg>
+        </svg>
       </div>
     </section>
 
